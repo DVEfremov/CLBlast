@@ -57,16 +57,18 @@
 //#include "android_patch.h"    // std::string
 #include <sstream>
 
-template <typename T>
-std::string to_string(T value) {
-  //create an output string stream
-  std::ostringstream os ;
+namespace std {
+    template<typename T>
+    std::string to_string(T value) {
+        //create an output string stream
+        std::ostringstream os;
 
-  //throw the value into the string stream
-  os << value ;
+        //throw the value into the string stream
+        os << value;
 
-  //convert the string stream into a string and return
-  return os.str() ;
+        //convert the string stream into a string and return
+        return os.str();
+    }
 }
 
 
