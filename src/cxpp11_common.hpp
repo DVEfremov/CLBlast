@@ -18,7 +18,7 @@
 #include <string>    // std::string
 #include <stdexcept> // std::runtime_error
 
-//#include "android_patch.h"    // std::string
+#include "android_patch.h"    // std::string
 
 namespace clblast {
 // =================================================================================================

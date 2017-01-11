@@ -54,7 +54,7 @@
 
 // Exception classes
 #include "cxpp11_common.hpp"
-#include "android_patch.h"    // std::string
+//#include "android_patch.h"    // std::string
 
 namespace clblast {
 // =================================================================================================

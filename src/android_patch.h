@@ -2,10 +2,10 @@
 // Created by daniil on 1/11/17.
 //
 
-//#ifndef CLBLAST_ANDROID_PATCH_H
-//#define CLBLAST_ANDROID_PATCH_H
-//
-//
+#ifndef CLBLAST_ANDROID_PATCH_H
+#define CLBLAST_ANDROID_PATCH_H
+
+
 //#include <string>
 //#include <sstream>
 //
@@ -17,10 +17,7 @@
 //        return stm.str() ;
 //    }
 //
-//
-//#endif //CLBLAST_ANDROID_PATCH_H
-
-
+#include <string>
 #include<sstream>
 template <typename T>
 std::string to_string(T value) {
@@ -33,3 +30,7 @@ std::string to_string(T value) {
     //convert the string stream into a string and return
     return os.str() ;
 }
+
+#endif //CLBLAST_ANDROID_PATCH_H
+
+
