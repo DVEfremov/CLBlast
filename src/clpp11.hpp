@@ -55,31 +55,30 @@
 // Exception classes
 #include "cxpp11_common.hpp"
 //#include "android_patch.h"    // std::string
-#include <sstream>
-#include <stdio.h>      /* printf, NULL */
-#include <stdlib.h>     /* strtod */
-
-namespace std {
-    template<typename T>
-    std::string to_string(T value) {
-        //create an output string stream
-        std::ostringstream os;
-
-        //throw the value into the string stream
-        os << value;
-
-        //convert the string stream into a string and return
-        return os.str();
-    }
-
-    double stod(string value) {
-        return strtod (value.c_str(), NULL);
-    }
-
-    int stoi(string value) {
-        return strtol (value.c_str(),NULL,0);
-    }
-}
+//#include <sstream>
+//#include <stdio.h>      /* printf, NULL */
+//#include <stdlib.h>     /* strtod */
+//namespace std {
+//    template<typename T>
+//    std::string to_string(T value) {
+//        //create an output string stream
+//        std::ostringstream os;
+//
+//        //throw the value into the string stream
+//        os << value;
+//
+//        //convert the string stream into a string and return
+//        return os.str();
+//    }
+//
+//    double stod(string value) {
+//        return strtod (value.c_str(), NULL);
+//    }
+//
+//    int stoi(string value) {
+//        return strtol (value.c_str(),NULL,0);
+//    }
+//}
 
 
 namespace clblast {
