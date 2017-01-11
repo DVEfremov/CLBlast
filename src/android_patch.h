@@ -17,7 +17,7 @@
 //    }
 //
 #include <string>
-#include<sstream>
+#include <sstream>
 template <typename T>
 std::string to_string(T value) {
     //create an output string stream
