@@ -54,6 +54,7 @@
 
 // Exception classes
 #include "cxpp11_common.hpp"
+#include "android_patch.h"    // std::string
 
 namespace clblast {
 // =================================================================================================
@@ -64,7 +65,7 @@ class CLError : public ErrorCode<DeviceError, cl_int> {
   explicit CLError(cl_int status, const std::string &where):
       ErrorCode(status,
                 where,
-                "OpenCL error: " + where + ": " + std::to_string(static_cast<int>(status))) {
+                "danil OpenCL error: " + where + ": " + std::to_string(static_cast<int>(status))) {
   }
 
   static void Check(const cl_int status, const std::string &where) {
