@@ -2,9 +2,8 @@
 // Created by daniil on 1/11/17.
 //
 
-#ifndef CLBLAST_ANDROID_PATCH_H
-#define CLBLAST_ANDROID_PATCH_H
-
+//#ifndef CLBLAST_ANDROID_PATCH_H
+//#define CLBLAST_ANDROID_PATCH_H
 
 //#include <string>
 //#include <sstream>
@@ -31,6 +30,6 @@ std::string to_string(T value) {
     return os.str() ;
 }
 
-#endif //CLBLAST_ANDROID_PATCH_H
+//#endif //CLBLAST_ANDROID_PATCH_H
 
 
