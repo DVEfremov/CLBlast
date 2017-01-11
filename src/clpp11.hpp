@@ -56,6 +56,8 @@
 #include "cxpp11_common.hpp"
 //#include "android_patch.h"    // std::string
 #include <sstream>
+#include <stdio.h>      /* printf, NULL */
+#include <stdlib.h>     /* strtod */
 
 namespace std {
     template<typename T>
@@ -68,6 +70,10 @@ namespace std {
 
         //convert the string stream into a string and return
         return os.str();
+    }
+
+    double stod(string value) {
+        return strtod (value.c_str(), NULL);
     }
 }
 
