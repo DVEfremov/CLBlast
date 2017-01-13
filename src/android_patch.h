@@ -22,11 +22,11 @@ namespace std {
         return os.str();
     }
 
-    inline double std::stod(string value) {
+    inline double stod(string value) {
         return strtod (value.c_str(), NULL);
     }
 
-    inline int std::stoi(string value) {
+    inline int stoi(string value) {
         return strtol (value.c_str(),NULL,0);
     }
 }
