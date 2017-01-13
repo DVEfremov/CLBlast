@@ -7,8 +7,8 @@
 
 #include <string>
 #include <sstream>
-#include <stdio.h>      /* printf, NULL */
-#include <stdlib.h>     /* strtod */
+#include <cstdio>
+#include <cstdlib>
 namespace std {
     template<typename T>
     std::string to_string(T value) {
